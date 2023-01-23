@@ -1,0 +1,19 @@
+.solution__top {
+  background: #fafafa url(../img/solution/solution-bg.svg) center center/cover
+    no-repeat;
+  overflow: hidden;
+  padding-top: 100px;
+}
+.solution__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.solution__content {
+  .text {
+    margin: 25px 0 35px;
+  }
+}
+.solution__img {
+  width: 52%;
+}

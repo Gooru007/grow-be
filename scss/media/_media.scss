@@ -1,0 +1,48 @@
+@media (max-width: 900px) {
+  body {
+    font-size: 14px;
+  }
+
+  section:not(.solution) {
+    padding: 70px 0 !important;
+  }
+
+  .text_big {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+
+@import "progress-bar-media";
+@import "pageup-media";
+@import "logo-media";
+@import "header-media";
+@import "promo-media";
+@import "brand-media";
+@import "solution-media";
+@import "features-media";
+@import "chooseus-media";
+@import "seo-media";
+@import "fact-media";
+@import "mailbox-media";
+@import "plans-media";
+@import "team-media";
+@import "clientsSay-media";
+@import "news-media";
+@import "footer-media";

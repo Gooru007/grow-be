@@ -1,0 +1,13 @@
+@media (max-width: 900px) {
+  .brand {
+    padding: 70px 0;
+  }
+}
+@media (max-width: 600px) {
+  .brand__items {
+    grid-template-columns: repeat(3, 1fr);
+    img {
+      width: 85%;
+    }
+  }
+}

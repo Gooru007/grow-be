@@ -1,0 +1,33 @@
+.pageup {
+  z-index: 99;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f25822;
+  display: inline-block;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  transition: 1.5s;
+  opacity: 0;
+  visibility: hidden;
+  user-select: none; //нельзя выбирать
+  pointer-events: none; //нельзя делать никакие события (клик,наведение...
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    user-select: auto;
+    pointer-events: all;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: url(../icons/circle-up.svg);
+    width: 32px;
+    height: 32px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

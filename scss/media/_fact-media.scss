@@ -1,0 +1,24 @@
+@media (max-width: 900px) {
+  .fact {
+    padding: 70px 0;
+  }
+  .fact__item {
+    font-size: 16px;
+    span {
+      font-size: 55px;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .fact__items {
+    row-gap: 20px;
+  }
+  .fact__item {
+    width: 50%;
+    &:nth-child(2n + 2) {
+      &::after {
+        content: none;
+      }
+    }
+  }
+}

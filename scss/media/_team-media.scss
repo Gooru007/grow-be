@@ -1,0 +1,18 @@
+@media (max-width: 1200px) {
+  .team__item {
+    &:hover {
+      box-shadow: none;
+      border: 1px solid #eeeeee;
+    }
+  }
+}
+@media (max-width: 900px) {
+  .team__item {
+    width: 48.6%;
+  }
+}
+@media (max-width: 600px) {
+  .team__item {
+    width: 100%;
+  }
+}

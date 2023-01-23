@@ -1,0 +1,96 @@
+.header {
+  padding: 40px 0;
+}
+.burger,
+.menu-left {
+  display: none;
+}
+
+.header__wraper {
+  gap: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  max-width: 690px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.menu__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 530px;
+  width: 100%;
+}
+.menu__item {
+  font-family: "Gilroy-Semibold";
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.menu__link {
+  color: #000;
+  &:hover {
+    color: $orange;
+  }
+}
+
+.has-submenu {
+  position: relative;
+  .menu__link {
+    position: relative;
+    &::after {
+      content: "";
+      background: url(../icons/header/arrow-bottom.svg);
+      position: absolute;
+      right: -12px;
+      top: 8px;
+      width: 8px;
+      height: 5px;
+      transition: 0.5s;
+    }
+  }
+  &:hover {
+    .menu__link::after {
+      transform: rotateX(180deg);
+    }
+
+    .submenu {
+      visibility: visible;
+      opacity: 1;
+      user-select: auto;
+      pointer-events: all;
+    }
+  }
+}
+.submenu {
+  position: absolute;
+  list-style: none;
+  visibility: hidden; //для того чтоб скрывать меню
+  opacity: 0;
+  user-select: none;
+  pointer-events: none;
+  background: $orange;
+  border-radius: 0 0 6px 6px;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.submenu__link {
+  color: #fff;
+  display: inline-block;
+  width: 100%;
+  padding: 3px 10px;
+  transition: 0.3s;
+  &:hover {
+    color: #fff;
+    background: darken($color: $orange, $amount: 15%);
+  }
+}

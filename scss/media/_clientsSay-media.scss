@@ -1,0 +1,11 @@
+@media (max-width: 600px) {
+  section.clientsSay {
+    padding: 70px 15px !important;
+  }
+  .clientsSay__item {
+    padding: 20px 10px;
+    .text_big {
+      font-size: 14px;
+    }
+  }
+}

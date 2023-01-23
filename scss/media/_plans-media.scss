@@ -1,0 +1,22 @@
+@media (max-width: 1200px) {
+  .plans__item {
+    &:hover {
+      box-shadow: none;
+      padding: 70px 15px;
+      margin: 0;
+    }
+  }
+}
+@media (max-width: 900px) {
+  .plans__items {
+    flex-direction: column;
+  }
+  .plans__item {
+    width: 100%;
+    max-width: 370px;
+    padding: 70px 0;
+    &:hover {
+      padding: 70px 0;
+    }
+  }
+}

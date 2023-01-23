@@ -1,0 +1,15 @@
+@media (max-width: 1200px) {
+  .seo__item {
+    &:hover {
+      box-shadow: none;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .seo__img {
+    display: none;
+  }
+  .seo__item {
+    padding: 15px 0;
+  }
+}

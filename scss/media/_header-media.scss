@@ -1,0 +1,125 @@
+@media (max-width: 800px) {
+  .no-scroll {
+    overflow: hidden;
+  }
+  .header {
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 6px 0;
+    z-index: 50;
+  }
+  .burger {
+    display: block;
+    width: 22px;
+    z-index: 51;
+    div {
+      width: 100%;
+      height: 2px;
+      background: #000;
+      margin-bottom: 4px;
+      transition: 0.5s;
+      &:last-child {
+        margin: 0;
+      }
+    }
+    &-active {
+      div {
+        background: #fff;
+        &:first-child {
+          transform: rotate(-45deg) translate(0, 4px);
+        }
+        &:nth-child(2) {
+          display: none;
+        }
+        &:last-child {
+          transform: rotate(45deg) translate(0, -4px);
+        }
+      }
+    }
+  }
+  .menu__list {
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu {
+    text-align: center;
+    position: fixed;
+    overflow: auto;
+    right: -100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.94);
+    width: 60%;
+    height: 100vh;
+    z-index: 50;
+    transition: 0.8s;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    &-active {
+      right: 0;
+    }
+  }
+  .menu__link {
+    color: #fff;
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .menu-left {
+    display: block;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    width: 40%;
+    height: 100vh;
+    z-index: 50;
+    transition: 0.8s;
+    &-active {
+      left: 0;
+    }
+  }
+  .submenu {
+    position: static;
+    visibility: visible;
+    opacity: 1;
+    user-select: auto;
+    pointer-events: all;
+    height: 0;
+    background: none;
+  }
+  .submenu__item:first-child {
+    margin-top: 16px;
+  }
+  .submenu__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  .submenu__link {
+    &:hover {
+      background: none;
+    }
+  }
+
+  .has-submenu {
+    .menu__link::after {
+      background: url(../icons/header/arrow-bottom-white.svg);
+    }
+    &:hover {
+      .menu__link::after {
+        transform: none;
+      }
+    }
+    &.active {
+      .menu__link::after {
+        transform: rotateX(180deg);
+      }
+    }
+  }
+}

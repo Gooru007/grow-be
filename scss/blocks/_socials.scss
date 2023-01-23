@@ -1,0 +1,30 @@
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  align-items: center;
+  &--big {
+    justify-content: flex-start;
+    .socials__link {
+      width: 30px;
+      height: 30px;
+      font-size: 16px;
+    }
+  }
+}
+
+.socials__link {
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.2s;
+  color: #aaa;
+  &:hover {
+    background: $orange;
+    color: #fff;
+  }
+}

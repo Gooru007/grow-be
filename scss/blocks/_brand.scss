@@ -1,0 +1,9 @@
+.brand {
+  padding: 100px 0;
+}
+
+.brand__items {
+  gap: 18px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}

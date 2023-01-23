@@ -1,0 +1,39 @@
+.news {
+  padding: 90px 0 100px;
+}
+.news__slider {
+  padding-bottom: 20px;
+}
+.news__wrapper {
+  text-align: center;
+  .text {
+    margin: 10px auto 55px;
+    max-width: 570px;
+  }
+}
+.news__item {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  img {
+    object-fit: cover;
+    align-self: stretch;
+    width: 48%;
+  }
+}
+.news__item__content {
+  padding: 45px 30px;
+  h3 {
+    line-height: 1.5;
+  }
+  .text {
+    margin: 22px 0 25px;
+  }
+  a {
+    text-decoration: none;
+    color: $orange;
+  }
+}
+.icons {
+  margin-top: 20px;
+}

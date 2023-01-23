@@ -1,0 +1,33 @@
+.chooseUs {
+  background: #fafafa;
+  padding: 90px 0 100px;
+}
+.chooseUs__wrapper {
+  text-align: center;
+  margin: 0 auto;
+  .text {
+    margin: 20px 0 55px;
+  }
+}
+.chooseUs__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.chooseUs__item {
+  background: #fff;
+  width: 31%;
+  text-align: center;
+  padding-bottom: 50px;
+  transition: 0.3s;
+  &:hover {
+    box-shadow: 15px 25px 70px -5px rgba(0, 0, 0, 0.07);
+  }
+  img {
+    margin-bottom: 25px;
+    width: 100%;
+  }
+  .text {
+    margin: 35px 25px;
+  }
+}

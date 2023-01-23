@@ -1,0 +1,42 @@
+.mailBox {
+  padding: 140px 0;
+  overflow-x: clip;
+}
+
+.mailBox__wrapper {
+  max-width: 570px;
+  width: 100%;
+  .text {
+    margin: 10px 0 55px;
+  }
+}
+
+.form {
+  input {
+    width: 200px;
+    height: 50px;
+    background: #eee;
+    padding: 0 20px;
+    border: none;
+    outline: none;
+    line-height: 1;
+    &:nth-child(1) {
+      border-radius: 50px 0 0 50px;
+    }
+    &:nth-child(2) {
+      border-radius: 0 50px 50px 0;
+      border-left: 2px solid #ccc;
+      margin-left: -4px;
+      margin-right: 20px;
+    }
+  }
+}
+
+.mailBox__img {
+  position: absolute;
+  width: 65%;
+  right: -150px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+}

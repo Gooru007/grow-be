@@ -1,0 +1,20 @@
+@media (max-width: 1200px) {
+  .features__item {
+    &:hover {
+      box-shadow: none;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .features {
+    padding: 70px 0;
+  }
+  .features__items {
+    flex-direction: column;
+  }
+  .features__item {
+    width: 100%;
+    max-width: 500px;
+  }
+}

@@ -1,0 +1,13 @@
+@media (max-width: 800px) {
+  section.news {
+    padding: 70px 15px !important;
+  }
+}
+@media (max-width: 600px) {
+  .news__item img {
+    display: none;
+  }
+  .news__item__content {
+    padding: 20px 10px;
+  }
+}

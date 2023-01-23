@@ -1,0 +1,27 @@
+.logo {
+  font-size: 24px;
+  font-family: "Gilroy-Bold";
+  color: #000;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  &:hover {
+    color: #000;
+  }
+  img {
+    width: 35px;
+    margin-right: 14px;
+  }
+  span {
+    color: #f25822;
+    display: inline-block;
+    text-transform: capitalize;
+  }
+  &--big {
+    font-size: 28px;
+    margin-top: -12px;
+    img {
+      width: 43px;
+    }
+  }
+}
